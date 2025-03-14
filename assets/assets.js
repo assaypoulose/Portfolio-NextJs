@@ -93,21 +93,25 @@ export const workData = [
         title: 'Frontend project',
         description: 'Web Design',
         bgImage: '/work-1.png',
+        link: 'https://amazon-clone-pi-navy.vercel.app/',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Full-Stack project',
+        description: 'Food Delivery App',
         bgImage: '/work-2.png',
+        link: 'https://food-delivery-frontend-pguf.onrender.com/',
     },
     {
-        title: 'Photography site',
+        title: 'Backend project',
         description: 'Web Design',
         bgImage: '/work-3.png',
+        link: 'https://clinic-booking-frontend.onrender.com/',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Portfolio project',
+        description: 'UI/UX designing',
         bgImage: '/work-4.png',
+        link: 'https://assay-portfolio.vercel.app/',
     },
 ]
 
