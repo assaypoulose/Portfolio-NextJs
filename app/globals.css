@@ -16,26 +16,43 @@
 
 /* Default Light Theme */
 body {
-  background-color: #fff; /* Light background */
-  color: #000; /* Dark text */
+  background-color: #fff;
+  color: #000;
 }
 
-/* Dark Mode Styles (when .dark class is added) */
-html.dark {
-  background-color: #11001F; /* Dark background */
-  color: #fff; /* Light text */
+/* Dark Mode Styles */
+html.dark body {
+  background-color: #11001F;
+  color: #fff;
 }
 
 html.dark .dark-Theme {
-  background-color: #11001F; /* Dark background */
+  background-color: #11001F;
 }
 
 html.dark .dark-text {
-  color: #fff; /* Light text */
+  color: #fff;
 }
 
 html.dark .lightHover:hover {
-  background-color: #2c1b36; /* Dark mode hover color */
+  background-color: #2c1b36;
+}
+
+/* Fix elements without `dark:` classes */
+html.dark .border-gray-400 {
+  border-color: #888 !important;
+}
+
+html.dark .text-gray-700 {
+  color: #ddd !important;
+}
+
+html.dark .bg-white {
+  background-color: #222 !important;
+}
+
+html.dark .border-gray-700 {
+  border-color: #555 !important;
 }
 
 /* Font Families */

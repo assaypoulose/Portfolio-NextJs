@@ -5,6 +5,7 @@ import React, { useEffect, useRef, useState } from 'react'
 const Navbar = ({isDarkmode, setIsDarkmode}) => {
 
     const[ isScroll, setIsScroll] = useState(false);
+    const [mounted, setMounted] = useState(false);
 
     const sideMenuRef = useRef();
 
@@ -26,6 +27,10 @@ const Navbar = ({isDarkmode, setIsDarkmode}) => {
         })
     },[])
 
+    useEffect(() => {
+        setMounted(true); // Ensure client-side rendering
+    }, []);
+
   return (
     <>
     <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden'>
@@ -43,9 +48,15 @@ const Navbar = ({isDarkmode, setIsDarkmode}) => {
                 <li><a className='font-ovo' href='#contact'>Contact Me</a></li>
             </ul>
             <div className='flex items-center gap-4'>
-                <button onClick={()=> setIsDarkmode(prev => !prev)}>
-                    <Image src={isDarkmode ?assets.sun_icon : assets.moon_icon} alt='' className='w-6' />
+            {mounted && (
+                <button onClick={() => setIsDarkmode(prev => !prev)}>
+                    <Image
+                        src={isDarkmode ? assets.sun_icon : assets.moon_icon}
+                        alt="Toggle Dark Mode"
+                        className="w-6"
+                    />
                 </button>
+            )}
                 <a href='#contact' className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-ovo'>Conatct <Image src={assets.arrow_icon} alt='' className='w-3' /> </a>
 
                 <button className='block md:hidden ml-3' onClick={openMenu}>

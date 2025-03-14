@@ -10,16 +10,14 @@ import Work from "./components/Work";
 
 export default function Home() {
 
-  const [isDarkmode, setIsDarkmode] = useState(false);
-
-  // Check localStorage for saved theme on initial load
-  useEffect(() => {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      setIsDarkmode(true);
-    } else {
-      setIsDarkmode(false);
+  const [isDarkmode, setIsDarkmode] = useState(() => {
+    // Check for existing theme in localStorage
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("theme") === "dark";
     }
-  }, []); // Empty dependency array to run only on component mount
+    return false;
+  });
+
 
   // Effect to toggle theme based on isDarkmode state
   useEffect(() => {
