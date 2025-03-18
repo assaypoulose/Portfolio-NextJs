@@ -2,7 +2,7 @@ import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
-const Header = () => {
+const Header = ({isDarkmode}) => {
   return (
     <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
         <div>
@@ -16,9 +16,9 @@ const Header = () => {
             I'm a full-stack developer with experience in building web applications using React.js, Next.js, and the MERN stack. I’m passionate about solving problems, optimizing features, and writing clean, high-quality code. Whether working independently or as part of a team, I enjoy bringing projects to life and ensuring they deliver real value.
                 </p>
                 <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
-                    <a href='#contact' className='px-10 py-3 border rounded-white rounded-full bg-black text-white flex items-center gap-2'>contact me <Image src={assets.right_arrow_white} alt='' className='w-4' /></a>
+                    <a href='#footer' className='px-10 py-3 border rounded-white rounded-full bg-black text-white flex items-center gap-2'>connect me <Image src={assets.right_arrow_white} alt='' className='w-4' /></a>
 
-                    <a href='/AssayPoulose_CV.pdf' download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'>download CV <Image src={assets.download_icon} alt='' className='w-4' /></a>
+                    <a href='/AssayPoulose_CV.pdf' download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'>download CV <Image src={isDarkmode ? assets.download_icon_white :assets.download_icon} alt='' className='w-4' /></a>
                 </div>
     </div>
   )

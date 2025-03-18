@@ -10,13 +10,13 @@ import Work from "./components/Work";
 
 export default function Home() {
 
-  const [isDarkmode, setIsDarkmode] = useState(() => {
-    // Check for existing theme in localStorage
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("theme") === "dark";
-    }
-    return false;
-  });
+  const [isDarkmode, setIsDarkmode] = useState(false); // Default state
+
+useEffect(() => {
+  // Only run on client
+  const theme = localStorage.getItem("theme") === "dark";
+  setIsDarkmode(theme);
+}, []);
 
 
   // Effect to toggle theme based on isDarkmode state
@@ -24,11 +24,11 @@ export default function Home() {
     if(isDarkmode){
       document.documentElement.classList.add('dark');
       localStorage.theme = 'dark';
-    }else{
+    } else {
       document.documentElement.classList.remove('dark');
       localStorage.theme = '';
     }
-  },[isDarkmode])
+  }, [isDarkmode]);
 
   return (
     <>

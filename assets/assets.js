@@ -41,8 +41,12 @@ import tailwindcss from './tailwindcss.png';
 import salesforce from './salesforce.png';
 import restapi from './restapi.png';
 import logo1 from './logo1.png';
+import logo2 from './logo_white.png';
+import download_icon_white from './download_white.png';
 
 export const assets = {
+    download_icon_white,
+    logo2,
     logo1,
     restapi,
     salesforce,
