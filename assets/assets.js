@@ -43,8 +43,13 @@ import restapi from './restapi.png';
 import logo1 from './logo1.png';
 import logo2 from './logo_white.png';
 import download_icon_white from './download_white.png';
+import assay_white from './assay_white.png';
+
+import { FaGithub, FaXing, FaSalesforce } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 export const assets = {
+    assay_white,
     download_icon_white,
     logo2,
     logo1,
@@ -92,6 +97,13 @@ export const assets = {
     right_arrow_bold_dark
 };
 
+export const socials = [
+    { icon: <FaGithub />, path: "https://github.com/assaypoulose" },
+    { icon: <FaXing />, path: "https://www.xing.com/profile/AssayPoulose_Peenikkaparamban/web_profiles" },
+    { icon: <SiLeetcode />, path: "https://leetcode.com/u/assaypoulose" },
+    { icon: <FaSalesforce />, path: "https://www.salesforce.com/trailblazer/assaypoulosepeenikkaparamban" },
+]
+
 export const workData = [
     {
         title: 'Frontend project',
@@ -124,28 +136,28 @@ export const serviceData = [
     { icon: assets.salesforce, title: 'Backend Development', description: 'Developing scalable and secure server-side applications using Node.js, Express.js, and databases like MongoDB & MySQL.', link: '' },
     { icon: assets.restapi, title: 'REST API Development', description: 'Secure and Scalable RESTful APIs for seamless data exchange, authentication, and third-party integrations, ensuring high performance and reliability.', link: '' },
     { icon: assets.graphics_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience by combining intuitive navigation, visually appealing interfaces, and user-centric interactions. ', link: '' },
-    
+
     // { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app Development involves creating software for mobile devices, ensuring seamless functionality, intuitive user experiences, and optimal performance across various platforms.', link: '' },
 ]
 
 export const infoList = [
-    { 
-        icon: assets.code_icon, 
-        iconDark: assets.code_icon_dark, 
-        title: 'Languages', 
-        description: ['HTML5, CSS3, JavaScript, React Js, Next Js', 'Java, C/C#, SQL, Python', 'Salesforce Apex'] 
+    {
+        icon: assets.code_icon,
+        iconDark: assets.code_icon_dark,
+        title: 'Languages',
+        description: ['HTML5, CSS3, JavaScript, React Js, Next Js', 'Java, C/C#, SQL, Python', 'Salesforce Apex']
     },
-    { 
-        icon: assets.edu_icon, 
-        iconDark: assets.edu_icon_dark, 
-        title: 'Education', 
-        description: ['42 Heilbronn', 'Full-Stack Development','MSc.Aviatoin transport', 'B.E.Aeronautical Engineering'] 
+    {
+        icon: assets.edu_icon,
+        iconDark: assets.edu_icon_dark,
+        title: 'Education',
+        description: ['42 Heilbronn', 'Full-Stack Development', 'MSc.Aviatoin transport', 'B.E.Aeronautical Engineering']
     },
-    { 
-        icon: assets.project_icon, 
-        iconDark: assets.project_icon_dark, 
-        title: 'Projects', 
-        description: ['Built more than 5 projects', 'Worked on MERN stack applications', 'Portfolio Projects'] 
+    {
+        icon: assets.project_icon,
+        iconDark: assets.project_icon_dark,
+        title: 'Projects',
+        description: ['Built more than 5 projects', 'Worked on MERN stack applications', 'Portfolio Projects']
     }
 ];
 
