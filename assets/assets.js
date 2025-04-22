@@ -42,6 +42,7 @@ import salesforce from './salesforce.png';
 import restapi from './restapi.png';
 import logo1 from './logo1.png';
 import logo2 from './logo_white.png';
+import react from './react.png';
 import download_icon_white from './download_white.png';
 import assay_white from './assay_white.png';
 
@@ -49,6 +50,7 @@ import { FaGithub, FaXing, FaSalesforce } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
 export const assets = {
+    react,
     assay_white,
     download_icon_white,
     logo2,
@@ -132,8 +134,8 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web/Full-Stack Development', description: 'Web development is the process of building and programming, web applications using React.js, Next.js, and modern web technologies.', link: '' },
-    { icon: assets.salesforce, title: 'Backend Development', description: 'Developing scalable and secure server-side applications using Node.js, Express.js, and databases like MongoDB & MySQL.', link: '' },
+    { icon: assets.web_icon, title: 'Web/Full-Stack Development', description: 'Web development is the process of building and programming, web applications using React.js from stunning frontend designs to powerful backend architectures. I create scalable, high-performance solutions tailored to your needs.', link: '' },
+    { icon: assets.salesforce, title: 'Salesforce CRM', description: 'Salesforce Agentforce implementation, CRM customization, user administration, AI associate creation, workflow automation, reports & dashboards, and hands-on experience with Salesforce LWC and end-to-end implementation.', link: '' },
     { icon: assets.restapi, title: 'REST API Development', description: 'Secure and Scalable RESTful APIs for seamless data exchange, authentication, and third-party integrations, ensuring high performance and reliability.', link: '' },
     { icon: assets.graphics_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience by combining intuitive navigation, visually appealing interfaces, and user-centric interactions. ', link: '' },
 
@@ -145,23 +147,23 @@ export const infoList = [
         icon: assets.code_icon,
         iconDark: assets.code_icon_dark,
         title: 'Languages',
-        description: ['HTML5, CSS3, JavaScript, React Js, Next Js', 'Java, C/C#, SQL, Python', 'Salesforce Apex']
+        description: ['HTML5, CSS3, JavaScript', 'Java, C/C#, SQL, Python', 'Salesforce Apex']
     },
     {
         icon: assets.edu_icon,
         iconDark: assets.edu_icon_dark,
         title: 'Education',
-        description: ['42 Heilbronn', 'Full-Stack Development', 'MSc.Aviatoin transport', 'B.E.Aeronautical Engineering']
+        description: ['42 Heilbronn', 'MSc.Aviatoin transport', 'B.E.Aeronautical Engineering']
     },
     {
         icon: assets.project_icon,
         iconDark: assets.project_icon_dark,
-        title: 'Projects',
-        description: ['Built more than 5 projects', 'Worked on MERN stack applications', 'Portfolio Projects']
+        title: 'Certifications',
+        description: ['Full-Stack Development', 'Oracle: Java Foundations Associate', 'Salesforce: Administrator, Agentforce & AI Associate']
     }
 ];
 
 
 export const toolsData = [
-    assets.vscode, assets.tailwindcss, assets.mongodb, assets.figma, assets.slack, assets.firebase, assets.postman, assets.git
+    assets.vscode, assets.react, assets.tailwindcss, assets.mongodb, assets.figma, assets.slack, assets.firebase, assets.postman, assets.git
 ];

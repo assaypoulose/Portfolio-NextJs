@@ -5,8 +5,8 @@ import React from 'react'
 const Work = () => {
     return (
         <div id='work' className='w-full px-[12%] py-10 scroll-mt-10'>
-            <h4 className='text-center mt-5 mb-2 text-lg font-ovo'>My portfolio</h4>
-            <h2 className='text-center text-5xl font-ovo'>My latest work...</h2>
+            {/* <h4 className='text-center mt-5 mb-2 text-lg font-ovo'>My portfolio</h4> */}
+            <h2 className='text-center text-5xl font-ovo mt-10'>My latest work...</h2>
             <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>
                 I'm excited to share my work with you—let's dive in and explore my projects together!
             </p>
