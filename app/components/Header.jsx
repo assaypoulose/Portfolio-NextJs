@@ -18,7 +18,7 @@ const Header = ({isDarkmode}) => {
                 <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
                     <a href='#footer' className='px-10 py-3 border rounded-white rounded-full bg-black text-white flex items-center gap-2'>connect me <Image src={assets.right_arrow_white} alt='' className='w-4' /></a>
 
-                    <a href='/CV-Assay.pdf' download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'>download CV <Image src={isDarkmode ? assets.download_icon_white :assets.download_icon} alt='' className='w-4' /></a>
+                    <a href='/CV-AssayPoulose.pdf' download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'>download CV <Image src={isDarkmode ? assets.download_icon_white :assets.download_icon} alt='' className='w-4' /></a>
                 </div>
     </div>
   )
