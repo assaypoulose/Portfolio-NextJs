@@ -147,7 +147,7 @@ export const infoList = [
         icon: assets.code_icon,
         iconDark: assets.code_icon_dark,
         title: 'Languages',
-        description: ['HTML5, CSS3, JavaScript', 'Java, C/C#, SQL, Python', 'Salesforce Apex']
+        description: ['HTML5, CSS3, JavaScript', 'Java, C/C#, SQL, Python', 'Salesforce Apex, Visualforce, LWC']
     },
     {
         icon: assets.edu_icon,

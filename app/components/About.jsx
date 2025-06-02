@@ -14,7 +14,7 @@ const About = () => {
                 </div>
                 <div className='flex-1'>
                     <p className='mb-5 max-w-2xl font-ovo text-justify'>
-                    My background in project coordination and sales consulting enables me to bridge the gap between technical solutions and business needs, ensuring high-quality delivery in both individual and team- based environments. Committed to continuous learning, collaboration, and delivering impactful digital experiences. Currently seeking roles in Salesforce administration or CRM-focused Full Stack Development to support digital transformation and customer success.
+                    What drives me is the thrill of simplifying complexity—whether that’s designing seamless workflows or connecting systems that never spoke before. Learning is at the heart of everything I do; every Flow, every line of Apex, and every Trailhead badge adds to my toolkit and fuels my growth.
                     </p>
 
                     <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
