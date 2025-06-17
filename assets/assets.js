@@ -159,7 +159,7 @@ export const infoList = [
         icon: assets.project_icon,
         iconDark: assets.project_icon_dark,
         title: 'Certifications',
-        description: ['Full-Stack Development', 'Oracle: Java Foundations Associate', 'Salesforce: Administrator, Agentforce & AI Associate']
+        description: ['Full-Stack Development', 'Oracle: Java Foundations Associate', 'Salesforce: Administrator, CPQ Specialist, Agentforce & AI Associate']
     }
 ];
 
