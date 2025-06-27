@@ -4,16 +4,17 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div id='about' className='w-full px-[12%] py-10 scroll-mt-10'>
+        <div id='about' className='w-full px-5 sm:px-10 md:px-20 py-10 scroll-mt-10'>
             {/* <h4 className='text-center mt-5 mb-2 text-lg font-ovo'>Introduction</h4> */}
-            <h2 className='mt-5 text-center text-5xl font-ovo'>About Me</h2>
+            <h2 className='mt-5 text-center text-3xl sm:text-4xl md:text-5xl font-ovo'>About Me</h2>
 
-            <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-5'>
-                <div className='w-64 sm:w-80 rounded-3xl max-w-none'>
-                    <Image src={assets.user_image} alt='user' className='w-full rounded-3xl' />
+            <div className='flex flex-col lg:flex-row items-center gap-10 sm:gap-14 md:gap-20 my-10'>
+                <div className='w-40 sm:w-60 md:w-72 rounded-3xl overflow-hidden'>
+                    <Image src={assets.user_image} alt='user' className='w-full h-auto rounded-3xl' />
                 </div>
-                <div className='flex-1'>
-                    <p className='mb-5 max-w-2xl font-ovo text-justify'>
+
+                <div className='flex-1 w-full'>
+                    <p className='mb-6 font-ovo text-justify text-sm sm:text-base'>
                     What drives me is the thrill of simplifying complexity—whether that’s designing seamless workflows or connecting systems that never spoke before. Learning is at the heart of everything I do; every Flow, every line of Apex, and every Trailhead badge adds to my toolkit and fuels my growth.
                     </p>
 
